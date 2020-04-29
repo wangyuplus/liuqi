@@ -6,20 +6,20 @@
 		insert into t_enclosure values(null,#{studentId},#{thesisText},0,#{description});
 	</insert>
 
-    <update id="updateEnclosur" parameterType="Enclosure">
+    <update id="updateEnclosure" parameterType="Enclosure">
 		update t_enclosure set thesisText=#{thesisText} where studentId=#{studentId}
 	</update>
 
 
-    <delete id="deleteEnclosur" parameterType="int">
+    <delete id="deleteEnclosure" parameterType="int">
 		delete from t_enclosure where studentId=#{studentId}
 	</delete>
 
-    <select id="findEnclosur" parameterType="int" resultType="Enclosure">
+    <select id="findEnclosure" parameterType="int" resultType="Enclosure">
 		select * from t_enclosure where studentId=#{studentId}
 	</select>
 
-    <select id="findEnclosurPath" parameterType="java.lang.String" resultType="Enclosure">
+    <select id="findEnclosurePath" parameterType="java.lang.String" resultType="Enclosure">
 		select * from t_enclosure where thesisText=#{path}
 	</select>
 </mapper>

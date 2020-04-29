@@ -2,11 +2,11 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.zc.dao.SystemCodeDao">
-    <insert id="addSystemCode" parameterType="SystemCodeDao">
+    <insert id="addSystemCode" parameterType="SystemCode">
 		insert into t_system_code values(null,#{studentId},#{thesisText},0,#{description});
 	</insert>
 
-    <update id="updateSystemCode" parameterType="SystemCodeDao">
+    <update id="updateSystemCode" parameterType="SystemCode">
 		update t_system_code set thesisText=#{thesisText} where studentId=#{studentId}
 	</update>
 
@@ -15,11 +15,11 @@
 		delete from t_system_code where studentId=#{studentId}
 	</delete>
 
-    <select id="findSystemCode" parameterType="int" resultType="SystemCodeDao">
+    <select id="findSystemCode" parameterType="int" resultType="SystemCode">
 		select * from t_system_code where studentId=#{studentId}
 	</select>
 
-	<select id="findSystemCodePath" parameterType="java.lang.String" resultType="SystemCodeDao">
+	<select id="findSystemCodePath" parameterType="java.lang.String" resultType="SystemCode">
 		select * from t_system_code where thesisText=#{path}
 	</select>
 

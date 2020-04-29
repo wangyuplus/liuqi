@@ -87,32 +87,32 @@ public class StudentController {
 
 	@Autowired
 	private IStudentService studentService;
-	
+
 	@Autowired
 	private IMajorService majorService;
-	
+
 	@Autowired
 	private ITeacherService teacherService;
-	
-	@RequestMapping(value="/add",method=RequestMethod.GET)
+
+	@RequestMapping(value = "/add", method = RequestMethod.GET)
 	public String addStudentForm() {
 		return "student/addStudent.jsp";
 	}
-	
+
 	private String realTimeTopicMessageOn = "";
-	
+
 	// 已废除
-	@RequestMapping(value="/add",method=RequestMethod.POST)
-	public String addStudent(HttpServletRequest request,String studentNo, String studentName,String sex,String grade ,String inputMan,String phone,String major,Model model) throws Exception {
-		studentNo = new String(studentNo.getBytes("iso-8859-1"),"utf-8");
-		studentName = new String(studentName.getBytes("iso-8859-1"),"utf-8");
-		sex = new String(sex.getBytes("iso-8859-1"),"utf-8");
-		grade = new String(grade.getBytes("iso-8859-1"),"utf-8");
-		inputMan = new String(inputMan.getBytes("iso-8859-1"),"utf-8");
-		phone = new String(phone.getBytes("iso-8859-1"),"utf-8");
-		major = new String(major.getBytes("iso-8859-1"),"utf-8");
+	@RequestMapping(value = "/add", method = RequestMethod.POST)
+	public String addStudent(HttpServletRequest request, String studentNo, String studentName, String sex, String grade, String inputMan, String phone, String major, Model model) throws Exception {
+		studentNo = new String(studentNo.getBytes("iso-8859-1"), "utf-8");
+		studentName = new String(studentName.getBytes("iso-8859-1"), "utf-8");
+		sex = new String(sex.getBytes("iso-8859-1"), "utf-8");
+		grade = new String(grade.getBytes("iso-8859-1"), "utf-8");
+		inputMan = new String(inputMan.getBytes("iso-8859-1"), "utf-8");
+		phone = new String(phone.getBytes("iso-8859-1"), "utf-8");
+		major = new String(major.getBytes("iso-8859-1"), "utf-8");
 		Date currentTime = new Date();
-		
+
 		Student student = new Student();
 		student.setStudentNo(studentNo);
 		student.setStudentName(studentName);
@@ -122,201 +122,202 @@ public class StudentController {
 		student.setPhone(phone);
 		student.setMajorId(Integer.parseInt(major));
 		student.setLastModifyTime(currentTime);
-		
+
 		int addNum = studentService.addStudent(student);
-		System.out.println("添加数目："+addNum);
-		
+		System.out.println("添加数目：" + addNum);
+
 		return "student/addSuccess.jsp";
 	}
-	
-	@RequestMapping(value="/info",method=RequestMethod.GET)
+
+	@RequestMapping(value = "/info", method = RequestMethod.GET)
 	public String studentInfo() {
 		return "student/studentPersionalInformation.jsp";
 	}
-	
-	@RequestMapping(value="/main",method=RequestMethod.GET)
+
+	@RequestMapping(value = "/main", method = RequestMethod.GET)
 	public String studentMainForm() {
 		return "student/main.jsp";
 	}
-	
-	@RequestMapping(value="/modifyInfo",method=RequestMethod.GET)
+
+	@RequestMapping(value = "/modifyInfo", method = RequestMethod.GET)
 	public String studentMofidyInfoForm() {
 		return "student/studentModifyInfo.jsp";
 	}
-	
-	@RequestMapping(value="/modifyPassword",method=RequestMethod.GET)
+
+	@RequestMapping(value = "/modifyPassword", method = RequestMethod.GET)
 	public String studentMofidyPasswordForm() {
 		return "student/studentModifyPassword.jsp";
 	}
-	
-	@RequestMapping(value="/thesis",method=RequestMethod.GET)
-	public String studentThesis(HttpServletResponse response,HttpServletRequest request,Model model) {
-		User currentUser = (User)request.getSession().getAttribute("currentUser");
+
+	@RequestMapping(value = "/thesis", method = RequestMethod.GET)
+	public String studentThesis(HttpServletResponse response, HttpServletRequest request, Model model) {
+		User currentUser = (User) request.getSession().getAttribute("currentUser");
 		String userNo = currentUser.getUserNo();
-		
+
 		Student student = studentService.getStudentByNO(userNo);
 		int studentId = student.getId();
 		Topic topic = studentService.chosenThesisTitle(studentId);
-		if(topic == null || "".equals(topic)) {
+		if (topic == null || "".equals(topic)) {
 			return "student/studentThesis.jsp";
-		}else {
+		} else {
 			model.addAttribute("topicMessage", "你已选择课题，不可多选");
-			
+
 			return "student/main.jsp";
-		}		
+		}
 	}
-	
-	@RequestMapping(value="/thesisResult",method=RequestMethod.GET)
-	public String studentThesisResult(HttpServletResponse response,HttpServletRequest request,Model model) {
-		User currnetUser = (User)request.getSession().getAttribute("currentUser");
+
+	@RequestMapping(value = "/thesisResult", method = RequestMethod.GET)
+	public String studentThesisResult(HttpServletResponse response, HttpServletRequest request, Model model) {
+		User currnetUser = (User) request.getSession().getAttribute("currentUser");
 		String studentNo = currnetUser.getUserNo();
 		Student student = studentService.getStudentByNO(studentNo);
 		int studentId = student.getId();
 		Topic topic = studentService.chosenThesisTitle(studentId);
-		if(topic == null || "".equals(topic)) {
+		if (topic == null || "".equals(topic)) {
 			model.addAttribute("topicMessage", "还未选择课题");
 			model.addAttribute("realTimeTopicMessage", realTimeTopicMessageOn);
-			
+
 			return "student/main.jsp";
-		}else {
+		} else {
 			int thesisId = topic.getThesisId();
-			
+
 			ThesisTitle theisTitle = teacherService.getThesisById(thesisId);
 			String topicName = theisTitle.getThesisName();
-			
+
 			model.addAttribute("topicName", topicName);
-			
+
 			model.addAttribute("realTimeTopicMessage", realTimeTopicMessageOn);
-			
+
 			return "student/studentThesisResult.jsp";
 		}
-		
+
 	}
-	
-	@RequestMapping(value="/viewTaskOpening")
-	public String studentViewTaskOpening(HttpServletRequest request,Model model) {
-		Student currentUser = (Student)request.getSession().getAttribute("student");
+
+	@RequestMapping(value = "/viewTaskOpening")
+	public String studentViewTaskOpening(HttpServletRequest request, Model model) {
+		Student currentUser = (Student) request.getSession().getAttribute("student");
 		int studentId = currentUser.getId();
 		Topic topic = studentService.chosenThesisTitle(studentId);
-		if(topic == null || "".equals(topic)) {
+		if (topic == null || "".equals(topic)) {
 			model.addAttribute("message", "尚未选择课题");
 			return "student/studentViewTaskBookAndOpening.jsp";
-		}else {
+		} else {
 			int thesisId = topic.getThesisId();
 			TeacherTaskBookOpening ttbo = studentService.getFilePathByThesisId(thesisId);
-			if(ttbo==null || "".equals(ttbo)) {
+			if (ttbo == null || "".equals(ttbo)) {
 				return "student/studentViewTaskBookAndOpening.jsp";
-			}else {
+			} else {
 				// 获得数据库中的文件目录；
 				String taskBookPath = ttbo.getTaskBook();
 				String openingPath = ttbo.getOpeningReport();
-				
+
 				Map<String, String> fileList = new HashMap<String, String>();
 
-				if(taskBookPath == null || "".equals(taskBookPath)) {
-					
-				}else {
+				if (taskBookPath == null || "".equals(taskBookPath)) {
+
+				} else {
 					String[] str1 = taskBookPath.split("\\\\");
-					String taskBookName = str1[str1.length-1].toString();
+					String taskBookName = str1[str1.length - 1].toString();
 					fileList.put(taskBookName, taskBookPath);
 				}
-				
-				if(openingPath == null || "".equals(openingPath)) {
-					
-				}else {
+
+				if (openingPath == null || "".equals(openingPath)) {
+
+				} else {
 					String[] str2 = openingPath.split("\\\\");
-					String openingName = str2[str2.length-1].toString();
+					String openingName = str2[str2.length - 1].toString();
 					fileList.put(openingName, openingPath);
 				}
 				model.addAttribute("fileList", fileList);
-				
+
 				return "student/studentViewTaskBookAndOpening.jsp";
 			}
-			
+
 		}
 	}
-	
-	@RequestMapping(value="/sectionTask")
-	public String studentSectionTask(HttpServletRequest request,Model model) {
-		Student currentUser = (Student)request.getSession().getAttribute("student");
+
+	@RequestMapping(value = "/sectionTask")
+	public String studentSectionTask(HttpServletRequest request, Model model) {
+		Student currentUser = (Student) request.getSession().getAttribute("student");
 		int studentId = currentUser.getId();
-		
+
 		List<TeacherProgress> progresses = studentService.getTeacherProgressByStudentId(studentId);
-		
-		for(int i=0;i<progresses.size();i++) {
+
+		for (int i = 0; i < progresses.size(); i++) {
 			int state = progresses.get(i).getState();
-			if(state ==0) {
+			if (state == 0) {
 				progresses.get(i).setStateName("教师还未查看");
-			}else if(state ==1) {
+			} else if (state == 1) {
 				progresses.get(i).setStateName("未通过");
-			}else {
+			} else {
 				progresses.get(i).setStateName("已通过");
 			}
-			
+
 		}
 		model.addAttribute("progressList", progresses);
-		
+
 		return "student/studentSectionTask.jsp";
 	}
-	
-	@RequestMapping(value="/uploadFile",method=RequestMethod.GET)
+
+	@RequestMapping(value = "/uploadFile", method = RequestMethod.GET)
 	public String studentUploadFile() {
 		return "student/studentUploadFile.jsp";
 	}
-	
-	@RequestMapping(value="/resourcesDownload")
-	public String studentResourcesDownload(HttpServletRequest request,Model model) {
-		
-		Student currentUser = (Student)request.getSession().getAttribute("student");
+
+	@RequestMapping(value = "/resourcesDownload")
+	public String studentResourcesDownload(HttpServletRequest request, Model model) {
+
+		Student currentUser = (Student) request.getSession().getAttribute("student");
 		int studentId = currentUser.getId();
-		
-		
+
+
 		Map<String, String> fileList = studentService.getTaskBookOpeningToMap(studentId);
-		if(fileList.isEmpty()) {
-			return "student/studentResourcesDownload.jsp";
-		}else {
+//		if (fileList.isEmpty()) {
+//			return "student/studentResourcesDownload.jsp";
+//		} else {
 			ThesisInformation thesisInformation4Db = studentService.getInfoByStudentId(studentId);
 			InterimReport interimReport = studentService.findInterimReport(studentId);
 			SystemCode systemCode = studentService.findSystemCode(studentId);
-			Translation translation=studentService.findTranslation(studentId);
-			Enclosure enclosure =studentService.findEnclosure(studentId);
+			Translation translation = studentService.findTranslation(studentId);
+			Enclosure enclosure = studentService.findEnclosure(studentId);
 
-			if(thesisInformation4Db !=null) {
+			if (thesisInformation4Db != null) {
 				String filePath = thesisInformation4Db.getThesisText();
 				String[] str = filePath.split("\\\\");
-				String fileName = str[str.length-1];
+				String fileName = str[str.length - 1];
 				fileList.put(fileName, filePath);
 			}
-			if(interimReport !=null) {
+			if (interimReport != null) {
 				String filePath = interimReport.getThesisText();
 				String[] str = filePath.split("\\\\");
-				String fileName = str[str.length-1];
+				String fileName = str[str.length - 1];
 				fileList.put(fileName, filePath);
 			}
-			if(systemCode !=null) {
-				String filePath = interimReport.getThesisText();
+			if (systemCode != null) {
+				String filePath = systemCode.getThesisText();
 				String[] str = filePath.split("\\\\");
-				String fileName = str[str.length-1];
+				String fileName = str[str.length - 1];
 				fileList.put(fileName, filePath);
 			}
-			if(translation !=null) {
-				String filePath = interimReport.getThesisText();
+			if (translation != null) {
+				String filePath = translation.getThesisText();
 				String[] str = filePath.split("\\\\");
-				String fileName = str[str.length-1];
+				String fileName = str[str.length - 1];
 				fileList.put(fileName, filePath);
 			}
-			if(enclosure !=null) {
-				String filePath = interimReport.getThesisText();
+			if (enclosure != null) {
+				String filePath = enclosure.getThesisText();
 				String[] str = filePath.split("\\\\");
-				String fileName = str[str.length-1];
+				String fileName = str[str.length - 1];
 				fileList.put(fileName, filePath);
 			}
 
-			
+
 			model.addAttribute("fileList", fileList);
 			return "student/studentResourcesDownload.jsp";
-		}
+
 	}
+
 	
 	@RequestMapping(value="/announcement")
 	public String studentAnnouncement(Model model) {
@@ -561,8 +562,6 @@ public class StudentController {
 		
 		request.setCharacterEncoding("utf-8");
 		response.setCharacterEncoding("utf-8");
-		fileName = new String(fileName.getBytes("iso-8859-1"),"utf-8");
-		filePath = new String(filePath.getBytes("iso-8859-1"),"utf-8");
 		File deleteFile = new File(filePath);
 		String message = "";
 		boolean flag = false;
