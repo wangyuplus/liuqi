@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zc.dao.TranslationDao">
+    <insert id="addTranslation" parameterType="Translation">
+		insert into t_translation values(null,#{studentId},#{thesisText},0,#{description});
+	</insert>
+
+    <update id="updateTranslation" parameterType="Translation">
+		update t_translation set thesisText=#{thesisText} where studentId=#{studentId}
+	</update>
+
+
+    <delete id="deleteTranslation" parameterType="int">
+		delete from t_translation where studentId=#{studentId}
+	</delete>
+
+    <select id="findTranslation" parameterType="int" resultType="Translation">
+		select * from t_translation where studentId=#{studentId}
+	</select>
+
+	<select id="findTranslationPath" parameterType="java.lang.String" resultType="Translation">
+		select * from t_translation where thesisText=#{path}
+	</select>
+
+</mapper>

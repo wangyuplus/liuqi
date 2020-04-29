@@ -1,0 +1,6 @@
+com\zc\BaseTest.class
+com\zc\dao\ITeacherDaoTest.class
+com\zc\dao\IThesisTitleDaoTest.class
+com\zc\dao\ITopicDaoTest.class
+com\zc\dao\IUserDaoTest.class
+com\zc\dao\IStudentDaoTest.class

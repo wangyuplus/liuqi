@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zc.dao.InterimReportDao">
+    <insert id="addInterimReport" parameterType="InterimReport">
+		insert into t_interim_report values(null,#{studentId},#{thesisText},0,#{description});
+	</insert>
+
+    <update id="updateInterimReport" parameterType="InterimReport">
+		update t_interim_report set thesisText=#{thesisText} where studentId=#{studentId}
+	</update>
+
+
+    <delete id="deleteInterimReport" parameterType="int">
+		delete from t_interim_report where studentId=#{studentId}
+	</delete>
+
+    <select id="findInterimReport" parameterType="int" resultType="InterimReport">
+		select * from t_interim_report where studentId=#{studentId}
+	</select>
+
+	<select id="findInterimReportPath" parameterType="java.lang.String" resultType="InterimReport">
+		select * from t_interim_report where thesisText=#{filePath}
+	</select>
+
+</mapper>
