@@ -77,26 +77,7 @@
 					<%--</li>--%>
 				<%--</ul>--%>
 				
-				<ul class="nav navbar-nav">
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-							aria-expanded="false">
-							进度管理
-							<span class="caret"></span>
-						</a>
-						<ul class="dropdown-menu">
-							<li>
-								<a href="${pageContext.request.contextPath}/student/openingResult">开题报告完成情况</a>
-							</li>
-							<li>
-								<a href="${pageContext.request.contextPath}/student/viewTaskOpening">查看任务书及开题报告</a>
-							</li>
-							<li>
-								<a href="${pageContext.request.contextPath}/student/sectionTask">查看阶段任务</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
+
 				
 				<ul class="nav navbar-nav">
 					<li class="dropdown">
@@ -115,7 +96,26 @@
 						</ul>
 					</li>
 				</ul>
-				
+				<ul class="nav navbar-nav">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+						   aria-expanded="false">
+							进度管理
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="${pageContext.request.contextPath}/student/openingResult">开题报告完成情况</a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/student/viewTaskOpening">查看任务书及开题报告</a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/student/sectionTask">查看阶段任务</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
 				<ul class="nav navbar-nav">
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
@@ -174,7 +174,7 @@
 				
 				<!-- 显示当前用户 -->
 				<ul class="nav navbar-nav navbar-right">
-					<p class="navbar-text" style="color: red">当前用户 &nbsp;${sessionScope.currentUser.userNo }</p>
+					<p class="navbar-text" style="color: red">当前用户 &nbsp;${sessionScope.student.majorName}&nbsp;${sessionScope.currentUser.userNo }</p>
 				</ul>
 
 				

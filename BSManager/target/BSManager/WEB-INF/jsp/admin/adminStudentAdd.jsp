@@ -46,7 +46,7 @@
 							<select class="form-control" id="major" name="major">
 
 								<option value="">请选择...</option>
-								<option value=15>大数据技术</option>
+								<option value=1>网络工程</option>
 								<option value=16>计算机科学与技术</option>
 								<option value=17>软件工程</option>
 							</select>

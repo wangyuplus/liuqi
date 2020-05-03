@@ -46,31 +46,18 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BSManager/src/main/java/com/zc/web/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1489">
-              <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+            <state relative-caret-position="337">
+              <caret line="116" column="63" selection-start-line="116" selection-start-column="56" selection-end-line="116" selection-end-column="63" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StudentController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/BSManager/src/main/java/com/zc/web/StudentController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="308" column="43" selection-start-line="308" selection-start-column="43" selection-end-line="308" selection-end-column="43" />
-              <folding>
-                <element signature="e#25345#25346#0" expanded="true" />
-                <element signature="e#25385#25386#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="t_system_code" pinned="false" current-in-tab="false">
-        <entry file="das://984f87c4-0396-4a94-898b-a14536d2896e/schema/db_graduation_management/table/t_system_code">
+      <file leaf-file-name="t_thesis_title" pinned="false" current-in-tab="false">
+        <entry file="das://984f87c4-0396-4a94-898b-a14536d2896e/schema/db_graduation_management/table/t_thesis_title">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
               <filtering enabled="true" />
@@ -78,17 +65,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="studentUploadFile.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BSManager/src/main/webapp/WEB-INF/jsp/student/studentUploadFile.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="94" column="124" selection-start-line="94" selection-start-column="109" selection-end-line="94" selection-end-column="124" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="t_interim_report" pinned="false" current-in-tab="false">
-        <entry file="das://984f87c4-0396-4a94-898b-a14536d2896e/schema/db_graduation_management/table/t_interim_report">
+      <file leaf-file-name="t_thesis_paper" pinned="false" current-in-tab="false">
+        <entry file="das://984f87c4-0396-4a94-898b-a14536d2896e/schema/db_graduation_management/table/t_thesis_paper">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
               <filtering enabled="true" />
@@ -96,56 +74,65 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="studentResourcesDownload.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BSManager/src/main/webapp/WEB-INF/jsp/student/studentResourcesDownload.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+      <file leaf-file-name="t_user" pinned="false" current-in-tab="false">
+        <entry file="das://984f87c4-0396-4a94-898b-a14536d2896e/schema/db_graduation_management/table/t_user">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_studentHomeHead.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="t_student" pinned="false" current-in-tab="false">
+        <entry file="das://984f87c4-0396-4a94-898b-a14536d2896e/schema/db_graduation_management/table/t_student">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="t_department" pinned="false" current-in-tab="false">
+        <entry file="das://984f87c4-0396-4a94-898b-a14536d2896e/schema/db_graduation_management/table/t_department">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_studentHomeHead.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BSManager/src/main/webapp/WEB-INF/jsp/student/_studentHomeHead.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="461">
-              <caret line="112" column="90" lean-forward="true" selection-start-line="112" selection-start-column="90" selection-end-line="112" selection-end-column="90" />
+            <state relative-caret-position="117">
+              <caret line="117" column="21" selection-start-line="117" selection-start-column="21" selection-end-line="117" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StudentServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BSManager/src/main/java/com/zc/service/impl/StudentServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2">
-              <caret line="430" column="32" lean-forward="true" selection-start-line="430" selection-start-column="32" selection-end-line="430" selection-end-column="32" />
-              <folding>
-                <element signature="e#13166#13167#0" expanded="true" />
-                <element signature="e#13221#13222#0" expanded="true" />
-                <element signature="e#13415#13416#0" expanded="true" />
-                <element signature="e#13475#13476#0" expanded="true" />
-              </folding>
+      <file leaf-file-name="t_teacher" pinned="false" current-in-tab="false">
+        <entry file="das://984f87c4-0396-4a94-898b-a14536d2896e/schema/db_graduation_management/table/t_teacher">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Enclosure.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BSManager/src/main/resources/mapping/Enclosure.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+      <file leaf-file-name="t_major" pinned="false" current-in-tab="false">
+        <entry file="das://984f87c4-0396-4a94-898b-a14536d2896e/schema/db_graduation_management/table/t_major">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EnclosureDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BSManager/src/main/java/com/zc/dao/EnclosureDao.java">
+      <file leaf-file-name="adminStudentAdd.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BSManager/src/main/webapp/WEB-INF/jsp/admin/adminStudentAdd.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="323">
+              <caret line="47" column="64" lean-forward="true" selection-start-line="47" selection-start-column="64" selection-end-line="47" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -187,6 +174,8 @@
       <find>showInfoByStudentId</find>
       <find>getInfoByStudentId</find>
       <find>findSystemCodePath</find>
+      <find>HEADER</find>
+      <find>当前</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -198,9 +187,6 @@
         <option value="$PROJECT_DIR$/BSManager/src/main/webapp/WEB-INF/c.tld.fxml" />
         <option value="$PROJECT_DIR$/BSManager/src/main/java/com/zc/entity/Doubt.java" />
         <option value="$PROJECT_DIR$/BSManager/src/main/webapp/WEB-INF/jsp/teacher/_teacherHomeHead.jsp" />
-        <option value="$PROJECT_DIR$/BSManager/src/main/webapp/WEB-INF/jsp/admin/adminStudentAdd.jsp" />
-        <option value="$PROJECT_DIR$/BSManager/src/main/java/com/zc/web/UserController.java" />
-        <option value="$PROJECT_DIR$/BSManager/src/main/webapp/WEB-INF/jsp/student/_studentHomeHead.jsp" />
         <option value="$PROJECT_DIR$/BSManager/src/main/java/com/zc/service/impl/TeacherServiceImpl.java" />
         <option value="$PROJECT_DIR$/BSManager/src/main/java/com/zc/web/AdminContraller.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/8aaaaed6-4632-487b-b45f-7bc1e97e685d/console.sql" />
@@ -224,6 +210,13 @@
         <option value="$PROJECT_DIR$/BSManager/src/main/resources/mapping/SystemCode.xml" />
         <option value="$PROJECT_DIR$/BSManager/src/main/resources/mapping/Enclosure.xml" />
         <option value="$PROJECT_DIR$/BSManager/src/main/java/com/zc/web/StudentController.java" />
+        <option value="$PROJECT_DIR$/BSManager/src/main/webapp/index.html" />
+        <option value="$PROJECT_DIR$/BSManager/src/main/webapp/index.css" />
+        <option value="$PROJECT_DIR$/BSManager/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/BSManager/src/main/webapp/WEB-INF/jsp/student/main.jsp" />
+        <option value="$PROJECT_DIR$/BSManager/src/main/webapp/WEB-INF/jsp/admin/adminStudentAdd.jsp" />
+        <option value="$PROJECT_DIR$/BSManager/src/main/java/com/zc/web/UserController.java" />
+        <option value="$PROJECT_DIR$/BSManager/src/main/webapp/WEB-INF/jsp/student/_studentHomeHead.jsp" />
       </list>
     </option>
   </component>
@@ -272,10 +265,10 @@
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
+      <flattenPackages ProjectPane="true" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -307,52 +300,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="项目" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BSManager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zc" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="项目" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BSManager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zc" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="项目" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BSManager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zc" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="项目" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BSManager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zc" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="项目" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BSManager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zc" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -361,14 +308,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="项目" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BSManager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mapping" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="项目" type="b2602c69:ProjectViewProjectNode" />
@@ -404,22 +343,13 @@
               <item name="jsp" type="462c0819:PsiDirectoryNode" />
               <item name="student" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="项目" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BSManager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -437,13 +367,14 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IdeaProjects\项目\BSManager\src\main\webapp" />
+      <recent name="E:\IdeaProjects\项目\BSManager\src\main\webapp\WEB-INF" />
+      <recent name="E:\IdeaProjects\项目\BSManager\src\main\webapp\WEB-INF\lib" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\IdeaProjects\项目\BSManager\src\main\webapp\WEB-INF\lib" />
       <recent name="E:\IdeaProjects\项目\BSManager\src\main\webapp\WEB-INF" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\IdeaProjects\项目\BSManager\src\main\webapp\WEB-INF" />
-      <recent name="E:\IdeaProjects\项目\BSManager\src\main\webapp\WEB-INF\lib" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -594,15 +525,17 @@
       <workItem from="1588042545585" duration="873000" />
       <workItem from="1588045053733" duration="114000" />
       <workItem from="1588064928672" duration="4056000" />
-      <workItem from="1588132799770" duration="1533000" />
+      <workItem from="1588132799770" duration="1883000" />
+      <workItem from="1588227490304" duration="37000" />
+      <workItem from="1588475713313" duration="6375000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43815000" />
+    <option name="totallyTimeSpent" value="50577000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -612,7 +545,7 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" anchor="right" id="Database" order="3" visible="true" weight="0.16487935" />
+      <window_info anchor="right" id="Database" order="3" weight="0.15817694" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -623,30 +556,29 @@
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27728614" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.12536873" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Database Console" order="7" weight="0.5" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2989276" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27211797" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
     <layout-to-restore>
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32890856" />
       <window_info id="Designer" order="2" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2920354" />
       <window_info anchor="bottom" id="Spring" order="9" />
       <window_info anchor="bottom" id="Database Console" order="8" weight="0.5" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2920354" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -672,6 +604,7 @@
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
     </layout-to-restore>
   </component>
@@ -682,60 +615,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/1dd8e505-5023-403f-97b9-4e30dada341a/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://1dd8e505-5023-403f-97b9-4e30dada341a/schema/db_graduation_management/table/t_thesis_information" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/218e5fd2-a9e9-4274-92c9-78f85e406cd3/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://218e5fd2-a9e9-4274-92c9-78f85e406cd3/schema/db_graduation_management/table/t_thesis_description" />
-    <entry file="das://218e5fd2-a9e9-4274-92c9-78f85e406cd3/schema/db_graduation_management/table/t_thesis_information" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/984f87c4-0396-4a94-898b-a14536d2896e/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://984f87c4-0396-4a94-898b-a14536d2896e/schema/db_graduation_management/table/t_topic_fast">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://984f87c4-0396-4a94-898b-a14536d2896e/schema/db_graduation_management/table/t_student">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://984f87c4-0396-4a94-898b-a14536d2896e/schema/db_graduation_management/table/t_major">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://984f87c4-0396-4a94-898b-a14536d2896e/schema/db_graduation_management/table/t_announcement">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BSManager/src/main/java/com/zc/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://984f87c4-0396-4a94-898b-a14536d2896e/schema/db_graduation_management/table/t_topic">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BSManager/src/main/resources/mapping/StudentMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="218">
@@ -750,24 +629,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://984f87c4-0396-4a94-898b-a14536d2896e/schema/db_graduation_management/table/t_thesis_title">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BSManager/src/main/java/com/zc/entity/ThesisInformation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://984f87c4-0396-4a94-898b-a14536d2896e/schema/db_graduation_management/table/t_thesis_paper">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -837,21 +702,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://984f87c4-0396-4a94-898b-a14536d2896e/schema/db_graduation_management/table/t_department">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://984f87c4-0396-4a94-898b-a14536d2896e/schema/db_graduation_management/table/t_doubt">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://984f87c4-0396-4a94-898b-a14536d2896e/schema/db_graduation_management/table/t_thesis_information">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
@@ -933,40 +784,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BSManager/src/main/java/com/zc/web/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1489">
-          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BSManager/src/main/java/com/zc/dao/EnclosureDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="114">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BSManager/src/main/resources/mapping/Enclosure.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
-          <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BSManager/src/main/java/com/zc/service/impl/StudentServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2">
-          <caret line="430" column="32" lean-forward="true" selection-start-line="430" selection-start-column="32" selection-end-line="430" selection-end-column="32" />
-          <folding>
-            <element signature="e#13166#13167#0" expanded="true" />
-            <element signature="e#13221#13222#0" expanded="true" />
-            <element signature="e#13415#13416#0" expanded="true" />
-            <element signature="e#13475#13476#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="7980">
+          <caret line="430" column="32" selection-start-line="430" selection-start-column="32" selection-end-line="430" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -977,23 +812,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BSManager/src/main/webapp/WEB-INF/jsp/student/_studentHomeHead.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="112" column="90" lean-forward="true" selection-start-line="112" selection-start-column="90" selection-end-line="112" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BSManager/src/main/webapp/WEB-INF/jsp/student/studentResourcesDownload.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+        <state relative-caret-position="418">
+          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BSManager/src/main/webapp/WEB-INF/jsp/student/studentUploadFile.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
+        <state relative-caret-position="1786">
           <caret line="94" column="124" selection-start-line="94" selection-start-column="109" selection-end-line="94" selection-end-column="124" />
         </state>
       </provider>
@@ -1005,14 +833,132 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/BSManager/src/main/webapp/header.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BSManager/src/main/webapp/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="24" column="38" lean-forward="true" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BSManager/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="70" column="14" lean-forward="true" selection-start-line="70" selection-start-column="14" selection-end-line="70" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BSManager/src/main/webapp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-171">
+          <caret line="1" column="6" lean-forward="true" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BSManager/src/main/webapp/WEB-INF/jsp/student/main.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="42" column="30" lean-forward="true" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/BSManager/src/main/java/com/zc/web/StudentController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="308" column="43" selection-start-line="308" selection-start-column="43" selection-end-line="308" selection-end-column="43" />
-          <folding>
-            <element signature="e#25345#25346#0" expanded="true" />
-            <element signature="e#25385#25386#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="3287">
+          <caret line="312" column="13" selection-start-line="312" selection-start-column="13" selection-end-line="312" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://984f87c4-0396-4a94-898b-a14536d2896e/schema/db_graduation_management/table/t_topic">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://984f87c4-0396-4a94-898b-a14536d2896e/schema/db_graduation_management/table/t_teacher_opening_report_task_book">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://984f87c4-0396-4a94-898b-a14536d2896e/schema/db_graduation_management/table/t_thesis_information">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BSManager/src/main/webapp/WEB-INF/jsp/admin/adminStudentAdd.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="47" column="64" lean-forward="true" selection-start-line="47" selection-start-column="64" selection-end-line="47" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BSManager/src/main/java/com/zc/web/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="116" column="63" selection-start-line="116" selection-start-column="56" selection-end-line="116" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://984f87c4-0396-4a94-898b-a14536d2896e/schema/db_graduation_management/table/t_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://984f87c4-0396-4a94-898b-a14536d2896e/schema/db_graduation_management/table/t_student">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://984f87c4-0396-4a94-898b-a14536d2896e/schema/db_graduation_management/table/t_major">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://984f87c4-0396-4a94-898b-a14536d2896e/schema/db_graduation_management/table/t_department">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://984f87c4-0396-4a94-898b-a14536d2896e/schema/db_graduation_management/table/t_teacher">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://984f87c4-0396-4a94-898b-a14536d2896e/schema/db_graduation_management/table/t_thesis_paper">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://984f87c4-0396-4a94-898b-a14536d2896e/schema/db_graduation_management/table/t_thesis_title">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BSManager/src/main/webapp/WEB-INF/jsp/student/_studentHomeHead.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="117" column="21" selection-start-line="117" selection-start-column="21" selection-end-line="117" selection-end-column="21" />
         </state>
       </provider>
     </entry>

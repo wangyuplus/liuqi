@@ -1,0 +1,87 @@
+.nav{
+    width: 100%;
+    height: 25px;
+    background-color: lavender;
+    padding: 0 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.nav li{
+    float: left;
+    padding:0;
+    margin:0;
+    list-style:none;
+    margin: 0 4px;
+   
+}
+.nav li a {
+    color:#333;
+    font-size: 12px;
+}
+.header{
+    width: 100%;
+    height: 160px;
+    background-image: url(header.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.header .text{
+    color: #fff;
+    font-size: 35px;
+    padding: 50px 0px 50px 700px;
+    font-weight: bold;
+}
+.bread{
+    background-color: lavender;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+.bread .text{
+    width: 20%;
+    text-align: center;
+}
+.main{
+    display: flex;
+    padding: 5px 0 0 0;
+}
+.main .left{
+    width: 80%;
+    height: 450px;
+}
+
+/* Make the image fully responsive */
+.carousel-inner img {
+    width: 100%;
+    height: 450px;
+}
+.main .right{
+    width: 20%;
+}
+.right .title{
+    background-color: lavender;
+    margin: 4px;
+    padding: 0 12px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.right .content{
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid rgb(217, 231, 245);
+    height: 93%;
+    margin: 4px;
+}
+.footer{
+    background-color: #014A95;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer .text{
+    color: #fff;
+    font-size: 14px;
+}

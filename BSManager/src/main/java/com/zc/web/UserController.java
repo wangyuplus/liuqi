@@ -115,6 +115,7 @@ public class UserController {
 			Student student = studentService.getStudentByNO(userNo);
 			int majorId = student.getMajorId();
 			String majorName = majorService.getNameById(majorId);
+
 			student.setMajorName(majorName);
 			
 			session.setAttribute("student", student);
